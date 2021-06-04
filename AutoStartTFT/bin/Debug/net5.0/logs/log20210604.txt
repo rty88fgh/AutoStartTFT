@@ -1,0 +1,421 @@
+2021-06-04 00:35:50.055 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:35:50.179 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:35:50.181 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:35:50.185 +08:00 [INF] Invoker started!!!
+2021-06-04 00:36:10.948 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:36:11.109 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:36:11.110 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:36:11.114 +08:00 [INF] Invoker started!!!
+2021-06-04 00:36:57.303 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:36:57.439 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:36:57.442 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:36:57.447 +08:00 [INF] Invoker started!!!
+2021-06-04 00:37:20.020 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:37:20.151 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:37:20.153 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:37:20.157 +08:00 [INF] Invoker started!!!
+2021-06-04 00:37:43.560 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:37:43.702 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:37:43.704 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:37:43.710 +08:00 [INF] Invoker started!!!
+2021-06-04 00:38:01.229 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:38:01.379 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:38:01.383 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:38:01.387 +08:00 [INF] Invoker started!!!
+2021-06-04 00:38:27.596 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:38:27.726 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:38:27.731 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:39:01.760 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:39:01.898 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:39:01.899 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:39:29.689 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:39:29.844 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:01.415 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:01.532 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:07.250 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.178 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.398 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.450 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.453 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.464 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.465 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.466 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.495 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.497 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.500 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.511 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.512 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.513 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.537 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.539 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.542 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.553 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.554 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.555 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.580 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.583 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.586 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.598 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.599 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.599 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.624 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.628 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.631 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.642 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.643 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.644 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.674 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.677 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.681 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.691 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.692 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.693 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.719 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.722 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.725 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.737 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.738 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.739 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.767 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.770 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.773 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.785 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.786 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.787 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.814 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.818 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.822 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.834 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.836 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.837 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.869 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.872 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.875 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.886 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.887 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.888 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.915 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.918 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.922 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.932 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.933 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.934 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:09.959 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:09.962 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:09.966 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:09.977 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:09.978 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:09.979 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.005 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.009 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.012 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.024 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.025 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.027 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.054 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.057 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.061 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.072 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.073 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.074 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.103 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.106 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.110 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.121 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.123 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.124 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.152 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.155 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.158 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.170 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.171 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.175 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.204 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.207 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.212 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.227 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.228 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.230 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.255 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.259 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.263 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.273 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.274 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.278 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.304 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.310 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.315 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.328 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.329 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.330 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.356 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.361 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.364 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.374 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.375 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.376 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.402 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.407 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.410 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.424 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.425 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.426 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.451 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.455 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.458 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.470 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.471 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.472 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.500 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.505 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.509 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.523 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.524 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.525 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.550 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.553 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.557 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.568 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.569 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.570 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.596 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.601 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.605 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.618 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.620 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.621 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.646 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.650 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.653 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.664 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.665 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.666 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.692 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.695 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.699 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.709 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.711 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.711 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.737 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.740 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.743 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.754 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.756 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.756 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.781 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.785 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.788 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.799 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.800 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.800 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.823 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.826 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.829 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.841 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.842 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.843 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.871 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.875 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.879 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.894 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.896 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.897 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.923 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.926 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.930 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.940 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.941 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.942 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:10.968 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:10.971 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:10.975 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:10.985 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:10.986 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:10.987 +08:00 [INF] Invoker started!!!
+2021-06-04 00:41:11.011 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:41:11.014 +08:00 [ERR] Failed to send request
+2021-06-04 00:41:11.018 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:41:11.028 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:41:11.029 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:41:11.030 +08:00 [INF] Invoker started!!!
+2021-06-04 00:45:06.982 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:45:07.122 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:45:07.174 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:45:07.176 +08:00 [INF] Invoker started!!!
+2021-06-04 00:45:07.415 +08:00 [ERR] Error while send request
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Internal Server Error).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at AutoStartTFT.LeagueClientInvoker.GetResponseAsync[TResponse](HttpMethodEnum method, String relativeUrl, IEnumerable`1 queryParameters, String body) in C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\LeagueClientInvoker.cs:line 110
+2021-06-04 00:45:07.476 +08:00 [ERR] Failed to send request
+2021-06-04 00:45:07.477 +08:00 [INF] Stop all process...
+2021-06-04 00:45:07.481 +08:00 [INF] Waiting for 10 sec to restart...
+2021-06-04 00:45:33.908 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:45:34.046 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:45:34.101 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:45:34.104 +08:00 [INF] Invoker started!!!
+2021-06-04 00:51:06.802 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:51:06.933 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:51:06.987 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:51:06.988 +08:00 [INF] Invoker started!!!
+2021-06-04 00:53:34.882 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:53:35.016 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:53:35.071 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:53:35.072 +08:00 [INF] Invoker started!!!
+2021-06-04 00:53:59.570 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:53:59.740 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:53:59.794 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:53:59.796 +08:00 [INF] Invoker started!!!
+2021-06-04 00:54:38.775 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:54:38.900 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:54:38.960 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:54:38.962 +08:00 [INF] Invoker started!!!
+2021-06-04 00:54:49.029 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:54:49.217 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:54:49.277 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:54:49.280 +08:00 [INF] Invoker started!!!
+2021-06-04 00:55:05.913 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:55:06.095 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:55:06.152 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:55:06.154 +08:00 [INF] Invoker started!!!
+2021-06-04 00:55:59.666 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 00:55:59.843 +08:00 [INF] LeaguageClient is found
+2021-06-04 00:55:59.891 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 00:55:59.893 +08:00 [INF] Invoker started!!!
+2021-06-04 00:56:00.242 +08:00 [INF] Create TFT room successfully
+2021-06-04 01:03:25.819 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 01:03:25.947 +08:00 [INF] LeaguageClient is found
+2021-06-04 11:41:21.408 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 11:41:21.448 +08:00 [ERR] Current user did not have permission. Please run as Administartor
+2021-06-04 11:41:21.449 +08:00 [ERR] Failed to start watcher
+2021-06-04 11:41:21.449 +08:00 [INF] Stop all process...
+2021-06-04 11:42:12.449 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 11:42:12.503 +08:00 [INF] LeaguageClient is found
+2021-06-04 11:42:12.517 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 11:42:12.518 +08:00 [INF] Invoker started!!!
+2021-06-04 11:42:12.751 +08:00 [INF] Create TFT room successfully
+2021-06-04 11:44:21.680 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 11:44:21.815 +08:00 [INF] LeaguageClient is found
+2021-06-04 11:44:21.868 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 11:44:21.870 +08:00 [INF] Invoker started!!!
+2021-06-04 11:44:22.170 +08:00 [INF] Create TFT room successfully
+2021-06-04 11:44:23.273 +08:00 [INF] Search team now...
+2021-06-04 11:45:24.216 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 11:45:24.270 +08:00 [INF] LeaguageClient is found
+2021-06-04 11:45:24.283 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 11:45:24.284 +08:00 [INF] Invoker started!!!
+2021-06-04 11:45:24.512 +08:00 [INF] Create TFT room successfully
+2021-06-04 11:45:25.599 +08:00 [INF] Search team now...
+2021-06-04 11:47:17.968 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 11:47:18.022 +08:00 [INF] LeaguageClient is found
+2021-06-04 11:47:18.034 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 11:47:18.036 +08:00 [INF] Invoker started!!!
+2021-06-04 11:47:18.272 +08:00 [INF] Create TFT room successfully
+2021-06-04 11:47:19.376 +08:00 [INF] Search team now...
+2021-06-04 11:51:29.023 +08:00 [INF] Waiting to find LeagueClient...
+2021-06-04 11:51:29.077 +08:00 [INF] LeaguageClient is found
+2021-06-04 11:51:29.089 +08:00 [INF] Starting to waiting invoker ready...
+2021-06-04 11:51:29.090 +08:00 [INF] Invoker started!!!
+2021-06-04 11:51:29.383 +08:00 [INF] Create TFT room successfully
+2021-06-04 11:51:30.522 +08:00 [INF] Search team now...
