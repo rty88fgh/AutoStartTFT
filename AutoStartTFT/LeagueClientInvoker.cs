@@ -2,9 +2,14 @@
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Net.WebSockets;
+using System.Reactive.Linq;
+using System.Reactive.Subjects;
 using System.Text;
 using System.Text.Json;
 using System.Threading;
@@ -19,12 +24,21 @@ namespace AutoStartTFT
         private CancellationTokenSource _cts;
         private UserAndPortInfo _userInfo;
         private HttpClient _client;
+        private Subject<LeagueEvent> _eventSubject;
+        private ClientWebSocket _socketClient;
+        private CancellationToken _socketClientToken;
+        private Task _receiveEventTask;
+        private const int ClientEventDataArrayAddress = 2;
+        private const int ClientEventNumber = 8;
         public bool IsReady { get; private set; }
+
+        public IObservable<LeagueEvent> Event => _eventSubject.AsObservable();
 
         public LeagueClientInvoker(LeagueClientFinder finder, ILogger<LeagueClientInvoker> logger)
         {
             _finder = finder;
             _logger = logger;
+            _eventSubject = new Subject<LeagueEvent>();
         }
 
         public Task<bool> StartAsync(CancellationToken ct)
@@ -39,6 +53,9 @@ namespace AutoStartTFT
 
             _finder.GetedProcess += OnGetedProcess;
             _finder.Closed += OnProcessClose;
+
+            if (_finder.IsFound)
+                OnGetedProcess(null, new LeagueClientInfoEventArgs());
 
             return Task.FromResult(true);
         }
@@ -59,7 +76,7 @@ namespace AutoStartTFT
         private void OnGetedProcess(object sender, LeagueClientInfoEventArgs e)
         {
             var worker = new LockFileWorker();
-            var info = worker.GetUserAndPortInfo(e.LeagueClientPath).Result;
+            var info = worker.GetUserAndPortInfo(_finder.ExecutablePath).Result;
 
             if (info == null)
             {
@@ -68,11 +85,11 @@ namespace AutoStartTFT
             }
 
             _userInfo = info;
-            SetupClient();
+            SetupClientAndSocketClient();
             IsReady = true;
         }
 
-        private void SetupClient()
+        private void SetupClientAndSocketClient()
         {
             var handler = new HttpClientHandler()
             {
@@ -83,6 +100,85 @@ namespace AutoStartTFT
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", _userInfo.AuthToken);
             _client.BaseAddress = new Uri($"https://127.0.0.1:{_userInfo.Port}/");
+            _socketClient = new ClientWebSocket
+            {
+                Options =
+                    {
+                        Credentials = new NetworkCredential("riot", _userInfo.Password),
+                        RemoteCertificateValidationCallback =
+                            (sender, cert, chain, sslPolicyErrors) => true,
+                    }
+            };
+
+            _socketClient.Options.AddSubProtocol("wamp");
+            _socketClientToken = _cts.Token;
+            _receiveEventTask = Task.Factory.StartNew(async () =>
+            {
+                try
+                {
+                    await _socketClient.ConnectAsync(new Uri($"wss://127.0.0.1:{_userInfo.Port}/"), _socketClientToken);
+                    await _socketClient.SendAsync(new ArraySegment<byte>(Encoding.UTF8.GetBytes("[5, \"OnJsonApiEvent\"]")),
+                        WebSocketMessageType.Binary,
+                        true,
+                        _socketClientToken);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Error while connecting socket to send request");
+                    return;
+                }
+
+                while (!_socketClientToken.IsCancellationRequested)
+                {
+                    var allBytes = new List<byte>();
+                    LeagueEvent clientEvent = null;
+                    try
+                    {
+                        while (!_socketClientToken.IsCancellationRequested)
+                        {
+                            var byteArray = new byte[1024];
+                            var buffer = new ArraySegment<byte>(byteArray);
+                            await _socketClient.ReceiveAsync(buffer, _socketClientToken);
+
+                            allBytes.AddRange(buffer.Array.Where(arr => arr != '\0'));
+
+                            if (allBytes.Where(b => b == '[').Count() == allBytes.Where(b => b == ']').Count())
+                                break;
+                        }
+
+                        if (_socketClientToken.IsCancellationRequested)
+                            return;
+
+                        var str = Encoding.UTF8.GetString(allBytes.ToArray());
+                        if (!string.IsNullOrEmpty(str))
+                        {
+                            var obj = JsonSerializer.Deserialize<object[]>(str);
+                            if (!int.TryParse(obj[0].ToString(), out var eventNum) ||
+                               eventNum != ClientEventNumber)
+                            {
+                                _logger.LogDebug("Reveiving non client event.Str:{str}", str);
+                                allBytes.Clear();
+                                continue;
+                            }
+
+                            clientEvent = JsonSerializer.Deserialize<LeagueEvent>(obj[ClientEventDataArrayAddress].ToString());
+
+                        }
+
+
+                        _eventSubject.OnNext(clientEvent);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, "Error while receiving message from socket");
+                        break;
+                    }
+                }
+            },
+            _socketClientToken,
+            TaskCreationOptions.LongRunning,
+            TaskScheduler.Default);
 
         }
 

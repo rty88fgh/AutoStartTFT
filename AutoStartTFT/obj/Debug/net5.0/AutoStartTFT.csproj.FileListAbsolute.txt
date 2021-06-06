@@ -20,8 +20,10 @@ C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\obj\Debug\net5.0\AutoStart
 C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\obj\Debug\net5.0\ref\AutoStartTFT.dll
 C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\obj\Debug\net5.0\AutoStartTFT.pdb
 C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\obj\Debug\net5.0\AutoStartTFT.genruntimeconfig.cache
-C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\obj\Debug\net5.0\AutoStartTFT.csprojAssemblyReference.cache
 C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\bin\Debug\net5.0\Serilog.dll
 C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
 C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\bin\Debug\net5.0\Serilog.Sinks.Console.dll
 C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\bin\Debug\net5.0\Serilog.Sinks.File.dll
+C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\bin\Debug\net5.0\System.Reactive.dll
+C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\bin\Debug\net5.0\System.Reactive.Linq.dll
+C:\Programming\AutoStartTFT\AutoStartTFT\AutoStartTFT\obj\Debug\net5.0\AutoStartTFT.csprojAssemblyReference.cache

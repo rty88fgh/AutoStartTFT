@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reactive.Linq;
+using System.Reactive.Subjects;
 using System.Runtime.Versioning;
 using System.Text;
 using System.Threading;
@@ -16,21 +18,15 @@ namespace AutoStartTFT
     {
         private const string ProcessName = "LeagueClientUx";
         public event EventHandler Closed;
+        public bool IsFound => Process != null;
         public event EventHandler<LeagueClientInfoEventArgs> GetedProcess;
-
-        /// <summary>
-        /// The league client's process.
-        /// </summary>
+        public string ExecutablePath { get; private set; }
         private Process Process { get; set; }
-
-        /// <summary>
-        /// The league client's executable path.
-        /// </summary>
-        private string ExecutablePath { get; set; }
-
+        
         private CancellationTokenSource _cts;
         private ILogger<LeagueClientFinder> _logger;
         private Task _checkProcess;
+
         public LeagueClientFinder()
         {
             _cts = new CancellationTokenSource();
