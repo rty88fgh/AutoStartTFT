@@ -61,7 +61,9 @@ namespace AutoStartTFT
         public Task StopAsync() 
         {
             _cts.Cancel();
-            _checkProcess.Wait();
+            if(_checkProcess != null)
+                _checkProcess.Wait();
+
             return Task.CompletedTask;
         }
 

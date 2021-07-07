@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -89,7 +90,17 @@ namespace AutoStartTFT
 
                 _logger.LogInformation("Invoker started!!!");
 
+                var gameFlowUrl = "/lol-gameflow/v1/gameflow-phase";
+                var response = await _invoker.SendRequestAsync(HttpMethodEnum.Get,
+                    gameFlowUrl,
+                    null,
+                    null);
 
+                OnReceiveEvent(new LeagueEvent()
+                {
+                    Uri = gameFlowUrl,
+                    Data = JsonDocument.Parse(response)
+                });
                 //var request = new LobbyRequest()
                 //{
                 //    QueueId = (int)GameModeEnum.TFT
@@ -123,6 +134,8 @@ namespace AutoStartTFT
 
         private async void OnReceiveEvent(LeagueEvent obj)
         {
+            _logger.LogInformation("Message:{msg}", obj);
+            return;
             //_logger.LogDebug("Receive event:{event}", obj);
             if (obj.Uri != "/lol-gameflow/v1/gameflow-phase")
                 return;
@@ -140,7 +153,7 @@ namespace AutoStartTFT
             switch (gameStatus)
             {
                 case "EndOfGame":
-                    await WaitingSec(180);
+                    await WaitingSec(Program.Settings.MaxWaitingSecWhenFinishGame);
                     await CreateTFTRoom();
                     break;
                 case "None":
@@ -152,7 +165,7 @@ namespace AutoStartTFT
                 case "Matchmaking":
                     break;
                 case "ReadyCheck":
-                    await WaitingSec(8);
+                    await WaitingSec(Program.Settings.MaxWaitingSecWhenFinishGame);
                     await ReadyToGameTask();
                     break;
                 case "ChampSelect":
