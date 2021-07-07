@@ -2,10 +2,10 @@
 
 
 使用方法: 
-1.使用Administrator權限開啟 .\AutoStartTFT\AutoStartTFT\bin\Debug\net5.0\win-x64\publish\AutoStartTFT.exe
-2.開啟GGC
-3.開啟LOL
-4.LOL開啟完成應該就會自動排戰棋
+1. 使用Administrator權限開啟 .\AutoStartTFT\AutoStartTFT\bin\Debug\net5.0\win-x64\publish\AutoStartTFT.exe
+2. 開啟GGC
+3. 開啟LOL
+4. LOL開啟完成應該就會自動排戰棋
 
 
 注意事項
